@@ -1,0 +1,159 @@
+<html>
+<head>
+<link href="ASSEST/CSS/style.css" rel="stylesheet">
+
+<title> MULTIMEDIA </title>
+</head>
+<body>
+
+
+<!--- INSERTING VIDEO --->
+<video width="100%" autoplay muted loop>
+<source src="ASSEST/VIDEO/intro.mp4" type="video/mp4">
+</video>
+
+<br><br>
+
+<hr>
+<center><b> FAV GROUP KPOP IDOL </center></b>
+<hr>
+<center>
+<video controls width="70%" autoplay loop>
+<source src="ASSEST/VIDEO/got7.mp4" type="video/mp4">
+</video>
+</center>
+
+
+<br><br>
+
+<!--- INSERTING AUDIO --->
+<hr>
+<center><b> FAV SONGS </center></b>
+<hr>
+<audio controls>
+<source src="ASSEST/AUDIO/angels_like_you.mp3" type="audio/mpeg">
+</audio>
+<br>
+
+<center>
+<audio controls>
+<source src="ASSEST/AUDIO/Earth.mp3" type="audio/mpeg">
+</audio>
+</center>
+<br>
+
+<audio controls>
+<source src="ASSEST/AUDIO/keshi_beside_you.mp3" type="audio/mpeg">
+</audio>
+<br>
+
+<center>
+<audio controls>
+<source src="ASSEST/AUDIO/Sabrina_Carpenter_Nonsense.mp3" type="audio/mpeg">
+</audio>
+</center>
+<br>
+
+
+<audio controls>
+<source src="ASSEST/AUDIO/sza_snooze_sped_up.mp3" type="audio/mpeg">
+</audio>
+<br>
+
+
+<!--- APPLYING JAVA APPLET AUDIO --->
+<hr>
+<center><b> CURRENTLY... </center></b>
+<hr>
+<br>
+<center>
+<!--- TO CALL THE CSS -->
+<div id="clock">8:10:45</div>
+<!--- TO LINK FOR A CURRENT TIME --->
+<script src="clock2.js"></script>
+</center>
+
+
+<br><br>
+<!--- EMBEDDING PDF FILE --->
+<hr>
+<center><b>SCHEME OF WORK.</center></b>
+<hr>
+<br>
+<center>
+<iframe src="ASSEST/PDF/IMD311 - SCHEME OF WORK.pdf" width="80%" height="500px">
+</iframe>
+</center>
+
+
+<!--- EMBEDDING PDF FILE ---->
+<hr>
+<marquee direction="down" scrollamount="1">
+<center> <b> HARAM_BABYMONS7ER </b></center>
+</marquee>
+<hr>
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jtd6Nn1Wc5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+<br><br>
+
+
+<hr>
+<marquee direction="down" scrollamount="1">
+<center> <b> SEVENTEEN_JOSHUA </b></center>
+</marquee>
+<hr>
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L4SoJzhaOj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+<br><br>
+
+
+
+<br><br>
+<!--- APPLYING MARQUEE --->
+<hr>
+<marquee direction="down" scrollamount="1">
+<center><h1> THANK YOU FOR WATCHING. </h1></center>
+
+</marquee>
+<hr>
+<br>
+
+
+
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+</body>
+</html>
